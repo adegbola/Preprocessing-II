@@ -1,1 +1,37 @@
 // Mixins in here
+.header(@flexend) {
+    display: flex;
+    justify-content: @flexend;
+    font-size: @font-size;
+}
+
+.h2(@flexstart, @space) {
+    display: flex;
+    flex-direction: @flexstart;
+    justify-content: @space;
+}
+
+.anchor(@margin-right, @text-decoration, @color) {
+    margin-right: @margin-right;
+    text-decoration: @text-decoration;
+    color: @color;
+}
+
+.mobile(@direction, @items) {
+    display: flex;
+    flex-direction: @direction;
+    align-items: @items;
+
+}
+
+.button() {
+    padding: 10px 40px;
+
+    border-radius: 1.0rem;
+    width: 20.0rem;
+    background-color: teal;
+    color: @white;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
