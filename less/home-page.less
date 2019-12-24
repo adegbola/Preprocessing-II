@@ -1,172 +1,72 @@
-.home {
+.container {
+  header {
+    background-image: url("https://personal-trainer-stgallen.ch/wp-content/uploads/2013/08/CRT53091.jpg");
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    min-height: 50rem;
 
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
+    .community-spirit {
+      .community();
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+      margin-top: 5rem;
 
-      img {
-        border-radius: 10px;
-      }
-    }
-
-    @media @mobile {
-      width: 500px;
-      display: flex;
-      .mobile(column, center);
-
-
-    }
-
-
-  }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-
-
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-
-
-
-    }
-
-    @media @mobile {
-
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-
-    }
-
-
-
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-
-    @media @mobile {
-
-      display: flex;
-      .mobile(column, center);
-
-    }
-  }
-
-
-
-}
-
-
-
-// home
-
-header {
-  .header(flex-end);
-  margin-top: @header-margin-top;
-
-  .fun-bus {
-    margin-right: @funBus-Margin;
-  }
-
-  @media @mobile {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 6px;
-
-    .fun-bus {
-      margin-right: 120px;
-    }
-
-
-
-  }
-
-  nav {
-    display: flex;
-
-    a {
-      @media @mobile {
-
-        display: flex;
-        justify-content: space-evenly;
-        align-content: space-between;
-
-
-
+      p {
+        .h1(3.2rem);
       }
 
+      h1 {
+        .h1(6.8rem);
+      }
 
+      .groupFitness {
+        .button();
+      }
+    }
+    
+
+
+  }
+  }
+
+  .anywhere-fitness {
+    .community();
+
+    h1 {
+      .h1();
+    }
+
+    h2 {
+      .h2();
     }
   }
 
-}
+  .middle-section {
+    .middleSection(center, 30rem);
 
-.topSection {
-  .funBus-img {
-    border-top: 2px dashed #C0C0C0;
-  }
+    .af-team {
+      margin-right   : 7rem;
+      justify-content: center;
+      cursor         : pointer;
 
-  .welcome {
-    margin-top: 1.5rem;
-  }
+      color: @blue-color;
 
-  @media @mobile {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px dashed @navigation-border;
+      .team {
+        h1 {
+          a {
 
 
-  }
-}
+            text-decoration: none;
+            color          :@lessRedcolor;
+          }
+        }
+      }
 
-
-.btn {
-  .button();
-
-  &:hover {
-    // The compiled color returned is #006667 
-    background-color: darken(teal, 5%)
+      h1 {
+        font-size  : 9rem;
+        text-align : center;
+        font-weight: 700;
+        width      : 300px;
+        line-height: 10rem;
+      }
+    }
   }
 }
