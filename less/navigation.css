@@ -1,11 +1,11 @@
-// Navigation Styles here
+/* // Navigation Styles here
 .container {
   header {
-    nav {
+    nav .dropdown {
       .header(flex-end);
 
       a {
-        .anchor(@font-size, none, #B43966, 3.2rem, 2rem);
+        .anchor(@font-size, none, @white, 3.2rem, 2rem);
       }
 
       .subMenu {
@@ -34,11 +34,9 @@ footer {
   }
 
   .phone {
-   
     a {
       .footerAnchor(13rem, 13rem, @white, 2rem);
-      
 
     }
   }
-}
+} */

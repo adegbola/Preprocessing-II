@@ -250,14 +250,6 @@ footer .phone a {
   border: none;
   cursor: pointer;
 }
-@media (max-width:500px) {
-  .container header {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .container .anywhere-fitness {
   text-align: center;
   margin-top: 5rem;
